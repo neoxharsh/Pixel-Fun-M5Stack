@@ -12,8 +12,8 @@ class Mover {
   public:
     int r, g, b;
     PVector location, velocity, mouse, dir;
-    ILI9341* d;
-    Mover(ILI9341* _d) {
+    M5Display* d;
+    Mover(M5Display* _d) {
       location = PVector::createVector(random(width), random(height));
       velocity = PVector::createVector(0, 0);
       
